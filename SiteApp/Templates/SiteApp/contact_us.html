@@ -1,0 +1,73 @@
+{% extends "frontend_base.html" %} {% load static %}{% block header %}
+
+<div class="background" id="contactBackground">
+  <div class="layer">
+    {% include 'SiteApp/nav.html' %}
+    <div class="p-5 empty-space"></div>
+    <div class="text-center">
+      <p class="text-white page-title">Contact Us</p>
+    </div>
+  </div>
+</div>
+{% endblock %} {% block content %}
+
+<div class="container my-5 py-5">
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="card border-0">
+        <img
+          src="{% static 'SiteApp/home_page_images/truckload.jpg' %}"
+          alt=""
+          class="img-fluid"
+        />
+        <div class="card-body px-0">
+          <h5 class="card-title">Truckload</h5>
+          <p class="card-text mb-5">
+            Larway Transportation offers capacity and flexibility to keep your
+            volume shipments moving to and from any point in the U.S., Canada
+            and Mexico.
+          </p>
+          <a href="#" class="larway-btn border-radius-0">Read More</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="card border-0">
+        <img
+          src="{% static 'SiteApp/home_page_images/services_2.jpg' %}"
+          alt=""
+          class="img-fluid"
+        />
+        <div class="card-body px-0">
+          <h5 class="card-title">Refrigerated and Dry Vans</h5>
+          <p class="card-text mb-5">
+            We have temperature-controlled trailer services are ideal for
+            shipments ranging from frozen commodities to those needing
+            protect-from-freeze service.
+          </p>
+          <a href="#" class="larway-btn border-radius-0">Read More</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="card border-0">
+        <img
+          src="{% static 'SiteApp/home_page_images/just-in-time.jpg' %}"
+          alt=""
+          class="img-fluid"
+        />
+        <div class="card-body px-0">
+          <h5 class="card-title">Just In Time Service</h5>
+          <p class="card-text mb-5">
+            We have dedicated professionals who are trained to understand your
+            specific requirements and will ensure your cargo arrive where and
+            when you exactly need it.
+          </p>
+          <a href="#" class="larway-btn border-radius-0">Read More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
