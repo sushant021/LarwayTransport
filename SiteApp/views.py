@@ -9,7 +9,7 @@ import re
 
 
 def index(request):
-    return render(request, 'SiteApp/index.html')
+    return render(request, 'SiteApp/main.html')
 
 
 def ViewServices(request):
