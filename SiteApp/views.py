@@ -9,15 +9,15 @@ import re
 
 
 def index(request):
-    return render(request, 'SiteApp/frontend/main.html')
+    return render(request, 'SiteApp/index.html')
 
 
 def ViewServices(request):
-    return render(request, 'SiteApp/frontend/services.html')
+    return render(request, 'SiteApp/services.html')
 
 
 def ViewAbout(request):
-    return render(request, 'SiteApp/frontend/about.html')
+    return render(request, 'SiteApp/about.html')
 
 
 def viewContact(request):
@@ -30,7 +30,7 @@ def viewContact(request):
             return HttpResponse('Invalid Form')
     else:
         form = QuoteRequestForm()
-        return render(request, 'SiteApp/frontend/contact_us.html', {'form': form})
+        return render(request, 'SiteApp/contact_us.html', {'form': form})
 
 
 def UserLogout(request):
@@ -39,7 +39,7 @@ def UserLogout(request):
 
 
 def UserDashBoard(request):
-    return render(request, 'SiteApp/backend/dashboard.html')
+    return render(request, 'SiteApp/dashboard.html')
 
 
 def ViewQuoteRequests(request):
@@ -62,7 +62,7 @@ def DriveWithUs(request):
             return HttpResponse('Invalid Form')
     else:
         form = DriverResumeForm()
-        return render(request, 'SiteApp/frontend/drive_with_us.html', {'form': form})
+        return render(request, 'SiteApp/drive_with_us.html', {'form': form})
 
 
 def RequestQuote(request):
@@ -75,7 +75,7 @@ def RequestQuote(request):
             return HttpResponse('Invalid Form')
     else:
         form = QuoteRequestForm()
-        return render(request, 'SiteApp/frontend/quote_request.html', {'form': form})
+        return render(request, 'SiteApp/quote_request.html', {'form': form})
 
 
 def ViewQuote(request, id):
